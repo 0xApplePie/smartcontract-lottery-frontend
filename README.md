@@ -2,6 +2,10 @@
 
 This repository contains the frontend for a decentralized smart contract lottery application built with Next.js, Tailwind CSS, ethers.js, and Moralis. It provides a user-friendly interface for interacting with the smart contract lottery, allowing users to enter the raffle, view the entrance fee, the number of players, recent winners, and the contract address.
 
+## Deployed at Vercel
+
+[Try it out!](https://smartcontract-lottery-frontend.vercel.app/)
+
 ## Features
 
 - **Enter Raffle**: Users can enter the lottery by interacting with the smart contract directly from the web interface.
@@ -23,11 +27,15 @@ Before running this project, make sure you have Node.js and npm installed. This 
 ```bash
 git clone https://github.com/0xApplepie/smartcontract-lottery-frontend.git
 ```
+
 Install dependencies
+
 ```bash
 npm install
 ```
+
 Run dev server
+
 ```bash
 npm run dev
 ```
