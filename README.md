@@ -1,28 +1,35 @@
-# Create T3 App
+# Lottery / Raffle frontend for the corresponding Smart Contract
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This repository contains the frontend for a decentralized smart contract lottery application built with Next.js, Tailwind CSS, ethers.js, and Moralis. It provides a user-friendly interface for interacting with the smart contract lottery, allowing users to enter the raffle, view the entrance fee, the number of players, recent winners, and the contract address.
 
-## What's next? How do I make an app with this?
+## Features
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- **Enter Raffle**: Users can enter the lottery by interacting with the smart contract directly from the web interface.
+- **View Lottery Information**: Display current entrance fee, number of players, the most recent winner, and the smart contract address.
+- **Responsive Design**: Built with Tailwind CSS for a responsive and modern UI.
+- **Web3 Integration**: Uses ethers.js and Moralis for seamless blockchain interactions.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Prerequisites
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+Before running this project, make sure you have Node.js and npm installed. This project was built with the following versions:
 
-## Learn More
+- Node.js version: 16.x
+- npm version: 10.2.5
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## Installation
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+1. Clone the repository:
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+```bash
+git clone https://github.com/0xApplepie/smartcontract-lottery-frontend.git
+```
+Install dependencies
+```bash
+npm install
+```
+Run dev server
+```bash
+npm run dev
+```
 
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+Thanks for [Patrick's](https://github.com/PatrickAlphaC) Solidity course and inspiring [Repository](https://github.com/PatrickAlphaC/nextjs-smartcontract-lottery-fcc) and of course to Free Code Camp for publishing the [video](https://www.youtube.com/watch?v=gyMwXuJrbJQ&) on their youtube channel

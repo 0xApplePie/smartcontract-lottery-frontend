@@ -92,11 +92,11 @@ export default function LotteryEntrance() {
         <div className="space-y-6">
             <div className="bg-white bg-opacity-20 p-4 rounded-2xl shadow-lg flex items-center justify-between">
                 <div>
-                    <div className="text-center">Entrance Fee: {ethers.formatUnits(entranceFee, "ether")} ETH</div>
-                    <div className="text-center">Number Of Players: {numPlayers}</div>
+                    <div className="text-start">Entrance Fee: {ethers.formatUnits(entranceFee, "ether")} ETH</div>
+                    <div className="text-start">Number Of Players: {numPlayers}</div>
                 </div>
                 <button
-                    className="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded transition duration-150 ease-in-out transform hover:scale-105"
+                    className="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-xl transition duration-150 ease-in-out transform hover:scale-105"
                     onClick={async function () {
                         await enterRaffle({
                             onSuccess: (tx) => {
@@ -115,18 +115,25 @@ export default function LotteryEntrance() {
                 </button>
             </div>
 
-            <div className="bg-white bg-opacity-20 p-4 rounded-2xl shadow-lg space-y-2">
-                <div className="p-2">
-                    <div className="text-center">Recent Winner: {recentWinner}</div>
-                </div>
-                <div className="p-2">
-                    <div className="text-center">Contract Address: {raffleAddress}</div>
-                </div>
-            </div>
+            <div className="bg-white bg-opacity-20 p-4 rounded-2xl shadow-lg">
+    <div className="flex justify-between items-center">
+        <span className="text-start">Recent Winner:  </span>
+        <span className="text-end">{recentWinner}</span>
+    </div>
+    <div className="flex justify-between items-center mt-2">
+        <span className="text-start">Contract Address:  </span>
+        <span className="text-end">{raffleAddress}</span>
+    </div>
+</div>
         </div>
     ) : (
         <div className="text-center text-lg">No Raffle Address Detected</div>
     )}
+<div className="mt-4 text-center" >
+    <a href="https://github.com/0xApplepie" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 transition duration-150 ease-in-out">
+        made by 0xApplepie - GitHub 
+    </a>
+</div>
 </div>
     )   
 }
